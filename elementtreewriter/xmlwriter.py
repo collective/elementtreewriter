@@ -1,4 +1,4 @@
-# File: elementtreewriter.py
+# File: xmlwriter.py
 #
 # Copyright (c) 2007 by Bibliotheca Hertziana -
 #    Max Planck Institute for Art History, Rome, Italy
