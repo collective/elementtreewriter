@@ -23,7 +23,7 @@ Set up a XMLWriter
 
 	>>> writer0 = XMLWriter(tree0)
 	>>> writer0
-	<elementtreewriter.XMLWriter object ...>
+	<xmlwriter.XMLWriter object ...>
 	>>> writer0.tree._root
 	<Element test ...>
 
