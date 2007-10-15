@@ -7,7 +7,7 @@ Obs: In this implementation the order of the namespace declarations is alphabeti
 The elementtree parser loses namespace prefixes on parsing (which is OK). They have to be reintroduced through XMLWriter's "namespaces" parameter.
 
 	>>> from elementtree import ElementTree
-	>>> from elementtreewriter import XMLWriter
+	>>> from xmlwriter import XMLWriter
 	>>> from StringIO import StringIO
 	>>> def parse(xmlstring):
 	...		return ElementTree.parse(StringIO(xmlstring))

@@ -250,7 +250,7 @@ if __name__ == '__main__':
     import unittest
     
     suite = doctest.DocFileSuite(
-            'test_elementtreewriter.txt',
+            'testxmlwriter.txt',
             optionflags=doctest.ELLIPSIS + doctest.REPORT_ONLY_FIRST_FAILURE)
     unittest.TextTestRunner().run(suite)
 
