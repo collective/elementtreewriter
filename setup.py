@@ -13,7 +13,7 @@ a better namespace handling - with sane prefixes -  go with this version.
 """,
       classifiers=[
         'Operating System :: OS Independent',
-        'Programming Language :: Python'
+        'Programming Language :: Python',
         'Development Status :: 5 - Production/Stable',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Text Processing :: Markup :: XML',
