@@ -5,10 +5,19 @@ version = '1.0'
 
 setup(name='elementtreewriter',
       version=version,
-      description="XML writer for elementrees with sane namespace support.",
+      description="XML writer for elementtree with sane namespace support.",
       long_description="""\
-TODO""",
-      classifiers=[], # Get strings from http://www.python.org/pypi?%3Aaction=list_classifiers
+This is an alternative for the standard XMLWriter of elementtree. If you need
+a better namespace handling - with sane prefixes -  go with this version.
+
+""",
+      classifiers=[
+        'Operating System :: OS Independent',
+        'Programming Language :: Python'
+        'Development Status :: 5 - Production/Stable',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Text Processing :: Markup :: XML',
+      ], 
       keywords='xml elementtree',
       author='Martin Raspe, Jens Klein',
       author_email='hertzhaft@biblhertz.it, jens@bluedynamics.com',
@@ -18,10 +27,7 @@ TODO""",
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          # -*- Extra requirements: -*-
+          'elementtree>=1.2.6'
       ],
-      entry_points="""
-      # -*- Entry points: -*-
-      """,
-      )
-      
+)
+    
