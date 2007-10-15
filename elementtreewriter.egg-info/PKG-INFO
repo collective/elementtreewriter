@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: elementtreewriter
+Version: 1.0dev
+Summary: XML writer for elementrees with sane namespace support.
+Home-page: UNKNOWN
+Author: Martin Raspe, Jens Klein
+Author-email: hertzhaft@biblhertz.it, jens@bluedynamics.com
+License: D-FSL - German Free Software License
+Description: TODO
+Keywords: xml elementtree
+Platform: UNKNOWN
