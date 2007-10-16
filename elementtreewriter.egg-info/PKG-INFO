@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: elementtreewriter
-Version: 1.0dev-r51720
+Version: 1.0
 Summary: XML writer for elementtree with sane namespace support.
 Home-page: UNKNOWN
 Author: Martin Raspe, Jens Klein

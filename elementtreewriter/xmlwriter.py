@@ -200,7 +200,7 @@ class XMLWriter(object):
             for attrname, value in attributes:
                 # (the elementtree parser discards these attributes)
                 if attrname.startswith('xmlns:'):
-                    namespaces[value] = att[6:]
+                    namespaces[value] = attrname[6:]
                 if attrname == "xmlns":
                     namespaces[value] = ''
             # get namespace for tag
