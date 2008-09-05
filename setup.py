@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '1.1'
+version = '1.2'
 
 setup(name='elementtreewriter',
       version=version,
@@ -26,7 +26,7 @@ a better namespace handling - with sane prefixes -  go with this version.
       include_package_data=True,
       packages=find_packages('src'),
       package_dir = {'': 'src'},      
-      zip_safe=False,
+      zip_safe=True,
       install_requires=[
           'elementtree>=1.2.6'
       ],
