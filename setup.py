@@ -23,7 +23,6 @@ a better namespace handling - with sane prefixes -  go with this version.
       author_email='hertzhaft@biblhertz.it, jens@bluedynamics.com',
       url='',
       license='D-FSL - German Free Software License',
-      packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
       zip_safe=False,
       install_requires=[
