@@ -15,7 +15,6 @@ Jens Klein <jens@bluedynamics.com>,
 Martin Raspe <hertzhaft@biblhertz.it>"""
 __docformat__ = 'plaintext'
 
-import types
 import string
 from elementtree.ElementTree import ElementTree
 from elementtree.ElementTree import Comment
@@ -68,9 +67,9 @@ class XMLWriter(object):
         return self.escapeText(text).replace('"', '&quot;')
 
     def encode(self, text):
-        if type(text) is types.UnicodeType:
+        if isinstance(text, unicode):
             return text.encode(self.encoding)
-        elif type(text) is types.StringType:
+        elif isinstance(text, str):
             return text
         raise TypeError, 'XMLWriter: Cannot encode objects of type %s' % type(text)
         
