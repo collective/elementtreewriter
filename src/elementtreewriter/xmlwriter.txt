@@ -2,12 +2,16 @@ DocTest for the XMLWriter module
 --------------------------------
 (c) 2006 by Martin Raspe (hertzhaft@biblhertz.it)
 
-Obs: In this implementation the order of the namespace declarations is alphabetical by prefixes. This is not required but was introduced to be able to compare the resulting XML. A more sophisticated test should reparse the resulting XML and check individual nodes and their namespaces.
+Obs: In this implementation the order of the namespace declarations is 
+alphabetical by prefixes. This is not required but was introduced to be able 
+to compare the resulting XML. A more sophisticated test should reparse the 
+resulting XML and check individual nodes and their namespaces.
 
-The elementtree parser loses namespace prefixes on parsing (which is OK). They have to be reintroduced through XMLWriter's "namespaces" parameter.
+The elementtree parser loses namespace prefixes on parsing (which is OK). They 
+have to be reintroduced through XMLWriter's "namespaces" parameter.
 
 	>>> from elementtree import ElementTree
-	>>> from xmlwriter import XMLWriter
+	>>> from elementtreewriter.xmlwriter import XMLWriter
 	>>> from StringIO import StringIO
 	>>> def parse(xmlstring):
 	...		return ElementTree.parse(StringIO(xmlstring))
@@ -23,7 +27,7 @@ Set up a XMLWriter
 
 	>>> writer0 = XMLWriter(tree0)
 	>>> writer0
-	<xmlwriter.XMLWriter object ...>
+	<elementtreewriter.xmlwriter.XMLWriter object ...>
 	>>> writer0.tree._root
 	<Element test ...>
 

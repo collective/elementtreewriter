@@ -24,6 +24,8 @@ a better namespace handling - with sane prefixes -  go with this version.
       url='',
       license='D-FSL - German Free Software License',
       include_package_data=True,
+      packages=find_packages('src'),
+      package_dir = {'': 'src'},      
       zip_safe=False,
       install_requires=[
           'elementtree>=1.2.6'

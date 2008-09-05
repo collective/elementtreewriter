@@ -17,8 +17,9 @@ __docformat__ = 'plaintext'
 
 import types
 import string
-
-from elementtree.ElementTree import ElementTree, Comment, ProcessingInstruction
+from elementtree.ElementTree import ElementTree
+from elementtree.ElementTree import Comment
+from elementtree.ElementTree import ProcessingInstruction
 from StringIO import StringIO
 
 class XMLWriter(object):
@@ -246,11 +247,6 @@ class XMLWriter(object):
             self.writeContent(node.tail)
 
 if __name__ == '__main__':
-    import doctest
-    import unittest
-    
-    suite = doctest.DocFileSuite(
-            'testxmlwriter.txt',
-            optionflags=doctest.ELLIPSIS + doctest.REPORT_ONLY_FIRST_FAILURE)
+    from tests import test_suite
+    suite = test_suite()
     unittest.TextTestRunner().run(suite)
-
