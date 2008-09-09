@@ -50,8 +50,9 @@ Ctrl-D ends session and continues testing.
 
 def test_suite():
     return doctest.DocFileSuite('xmlwriter.txt',
-                                 optionflags=doctest.ELLIPSIS + \
-                                             doctest.REPORT_ONLY_FIRST_FAILURE)
+                                globs={'interact': interact},
+                                optionflags=doctest.ELLIPSIS + \
+                                            doctest.REPORT_ONLY_FIRST_FAILURE)
 
 if __name__ == '__main__':
     unittest.main(defaultTest='test_suite') 

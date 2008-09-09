@@ -165,5 +165,8 @@ A nested structure without declarations
 
 Open an interactive shell
 
-	self.interact(locals())
+	>>> xmlB
+	False
+
+	
 
