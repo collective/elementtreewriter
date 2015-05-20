@@ -28,7 +28,7 @@ a better namespace handling - with sane prefixes -  go with this version.
       package_dir = {'': 'src'},      
       zip_safe=True,
       install_requires=[
-          'elementtree>=1.2.6'
+          'elementtree'
       ],
 )
     
